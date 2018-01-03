@@ -30,19 +30,19 @@ This articles describes how you can use the props object to:
 
 A chart, configured to update data values dynamically, is shown below (click __Update chart data__ to update the chart data):
 
-{% embed_chart {"source": "using-with-javascript-libraries-reactjs-configuring-charts-using-the-reactjs-props-object-example-1.js", "id": "1"} %}
+{% embed_chart using-with-javascript-libraries-reactjs-configuring-charts-using-the-reactjs-props-object-example-1.js %}
 
 An HTML container element to contain the rendered chart is created first, as shown below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 <div id="chart-container"></div>
 
-{% endraw %}{% endhighlight %}
+```
 
 The code to render this chart is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 var myDataSource = {
     chart: {
@@ -140,25 +140,25 @@ ReactDOM.render(
     document.getElementById('chart-container')
 );
 
-{% endraw %}{% endhighlight %}
+```
 
 ## Updating Chart Attributes
 
 A chart, configured to update the chart caption and sub-caption alignment dynamically, is shown below (click any one of the radio buttons shown below the chart to change the caption and sub-caption alignment):
 
-{% embed_chart {"source": "using-with-javascript-libraries-reactjs-configuring-charts-using-the-reactjs-props-object-example-2.js", "id": "2"} %}
+{% embed_chart using-with-javascript-libraries-reactjs-configuring-charts-using-the-reactjs-props-object-example-2.js %}
 
 An HTML container element to contain the rendered chart is created first, as shown below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 <div id="chart-container"></div>
 
-{% endraw %}{% endhighlight %}
+```
 
 The code to render this chart is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 var myDataSource = {
     chart: {
@@ -273,7 +273,7 @@ ReactDOM.render(
     document.getElementById('chart-container')
 );
 
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info">
 For a list of other attributes that you can configure for a column 2D chart, click [here]{% linkTo attrs.md chart=column2d %}{:target='_blank'}.
@@ -283,7 +283,7 @@ For a list of other attributes that you can configure for a column 2D chart, cli
 
 A column 2D chart, configured to listen to the [dataplotClick]{% linkTo FusionCharts.events.dataplotClick %}{:target='_blank'} event, is shown below (click a a data plot to trigger the event) :
 
-{% embed_chart {"source": "using-with-javascript-libraries-reactjs-configuring-charts-using-the-reactjs-props-object-example-3.js", "id": "3"} %}
+{% embed_chart using-with-javascript-libraries-reactjs-configuring-charts-using-the-reactjs-props-object-example-3.js %}
 
 <p> </p>
 
@@ -291,7 +291,7 @@ When the event is triggered, the text __Selected Value:__ rendered below the cha
 
 An HTML container element to contain the rendered chart is created first, as shown below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 <div class="chart-example" id="chart-container"></div>
 
@@ -300,11 +300,11 @@ It is assigned an initial value 'nothing' that will be displayed when the chart 
 
 <p>Selected Value: <span id="selectedValue"></span></p> 
 
-{% endraw %}{% endhighlight %}
+```
 
 The code to render this chart is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 var myDataSource = {
         "chart": {
@@ -358,4 +358,4 @@ ReactDOM.render(
     document.getElementById('chart-container')
 );
 
-{% endraw %}{% endhighlight %}
+```

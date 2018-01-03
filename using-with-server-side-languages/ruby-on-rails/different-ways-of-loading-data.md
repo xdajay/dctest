@@ -24,11 +24,11 @@ In this section, you will be shown how the Ruby on Rails wrapper uses each of th
 
 A column chart, the data for which is loaded using a static JSON string, is shown below:
 
-{% embed_chart {"source": "using-with-server-side-languages-ruby-on-rails-different-ways-of-loading-data-example-1.js", "id": "1"} %}
+{% embed_chart using-with-server-side-languages-ruby-on-rails-different-ways-of-loading-data-example-1.js %}
 
 The data structure needed to create the above chart goes into the `app/controllers/examples_controller.rb` file. It is as given below:
 
-{% highlight rb lineanchors %}{% raw %}
+```rb
 # Example to create a column 2D chart with the chart data passed in JSON string format.
 
 #The `fc_json` method is defined to load chart data from a JSON string.
@@ -105,7 +105,7 @@ def fc_json
 
 	})
 end
-{% endraw %}{% endhighlight %}
+```
 
 To know more about the attributes that you can configure for the column 2D chart, visit [this page]{% linkTo attrs.md chart=column2d %}.
 
@@ -115,7 +115,7 @@ Next, we will look at how you can render the column chart shown above using XML 
 
 The data structure needed to create the above chart goes into the `app/controllers/examples_controller.rb` file. It is as given below:
 
-{% highlight rb lineanchors %}{% raw %}
+```rb
 # The `fc_xml` method is defined to load chart data from an XML string.
 def fc_xml
 
@@ -142,7 +142,7 @@ def fc_xml
 	@chart.height = 400
 
 end
-{% endraw %}{% endhighlight %}
+```
 
 ## Loading Data from a Valid Ruby Hash
 
@@ -152,11 +152,11 @@ As an example, we will create a multi-series column 2D chart that compares the q
 
 The multi-series column 2D chart thus rendered is shown below:
 
-{% embed_chart {"source": "using-with-server-side-languages-ruby-on-rails-different-ways-of-loading-data-example-2.js", "id": "2"} %}
+{% embed_chart using-with-server-side-languages-ruby-on-rails-different-ways-of-loading-data-example-2.js %}
 
 The data structure needed to create the above chart goes into the `app/controllers/examples_controller.rb` file. It is as given below:
 
-{% highlight rb lineanchors %}{% raw %}
+```rb
 # The `fc_hash` function is defined to load data from a Ruby Hash. This data will be converted to
 
 # JSON and the chart will be rendered.
@@ -220,7 +220,7 @@ def fc_hash
   }
 })
 end
-{% endraw %}{% endhighlight %}
+```
 To know more about the attributes that you can configure for the multi-series column 2D chart, visit [this page]{% linkTo attrs.md chart=mscolumn2d %}.
 
 ## Important Tips for Developers
@@ -234,7 +234,7 @@ Given below are a few tips that, although applicable while using FusionCharts, n
      <td><strong>Single-series Chart</strong></td>
   </tr>
   <tr>
-    <td>{% embed_data {"source": "using-with-server-side-languages-ruby-on-rails-different-ways-of-loading-data-example-3.js"} %}
+{% embed_data using-with-server-side-languages-ruby-on-rails-different-ways-of-loading-data-example-3.js %}
 For an example, click [here]{% linkTo tutorials/chart-guide/standard-charts/creating-standard-charts.md %}.
     </td>
   </tr>
@@ -242,7 +242,7 @@ For an example, click [here]{% linkTo tutorials/chart-guide/standard-charts/crea
     <td><strong>Multi-series Chart</strong></td>
   </tr>
   <tr>  
-    <td>{% embed_data {"source": "using-with-server-side-languages-ruby-on-rails-different-ways-of-loading-data-example-4.js"} %}
+{% embed_data using-with-server-side-languages-ruby-on-rails-different-ways-of-loading-data-example-4.js %}
 For an example, click [here]{% linkTo tutorials/chart-guide/multi-series-charts/creating-multi-series-charts.md %}.
     </td>
   </tr>

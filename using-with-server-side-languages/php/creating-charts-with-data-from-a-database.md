@@ -31,11 +31,11 @@ Assume that you have a __fusioncharts_phpsample__ database with the __Country__ 
 
 The column 2D chart that we need to render here looks like this:
 
-{% embed_chart {"source": "using-with-server-side-languages-php-creating-charts-with-data-from-a-database-example-1.js", "id": "1"} %}
+{% embed_chart using-with-server-side-languages-php-creating-charts-with-data-from-a-database-example-1.js %}
 
 The data structure needed to render this chart is given below:
 
-{% highlight php lineanchors %}{% raw %}
+```php
 <?php
 
 /* Include the `fusioncharts.php` file that contains functions	to embed the charts. */
@@ -124,7 +124,7 @@ The data structure needed to render this chart is given below:
 
 </html>
 
-{% endraw %}{% endhighlight %}
+```
 
 ## Creating Drill-down Charts
 
@@ -134,13 +134,13 @@ To show data at different levels of a hierarchy, we use drill-down charts. We wi
 
 The chart thus rendered looks like this:
 
-{% embed_chart {"source": "using-with-server-side-languages-php-creating-charts-with-data-from-a-database-example-2.js", "id": "2"} %}
+{% embed_chart using-with-server-side-languages-php-creating-charts-with-data-from-a-database-example-2.js %}
 
 To render the above chart, we need two PHP files - `country.php` and `countryDrillDown.php`. The `country.php` file creates a drill-down column 2D chart showing the most populous countries. The `countryDrillDown.php` file creates column 2D charts that show the most populous cities for the country that was selected in the parent chart.
 
 The data structure in the `country.php` file is given below:
 
-{% highlight php lineanchors %}{% raw %}
+```php
 
 <?php
 
@@ -229,11 +229,11 @@ The data structure in the `country.php` file is given below:
    </body>
 </html>
 
-{% endraw %}{% endhighlight %}
+```
 
 The data structure for the `countryDrillDown.php` file is given below:
 
-{% highlight php lineanchors %}{% raw %}
+```php
 <?php
 
  /* Include the `includes/fusioncharts.php` file that contains functions to embed the charts.*/
@@ -357,7 +357,7 @@ The data structure for the `countryDrillDown.php` file is given below:
   	<div id="chart-1"><!-- Fusion Charts will render here--></div>
    </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 
 ## Create a Multi-series 2D Single Y Combination Chart
@@ -366,7 +366,7 @@ Assume that you have a __fusioncharts_phpsample__ database with the __Revenue__ 
 
 The multi-series combination chart that we need to render here looks like this:
 
-{% embed_chart {"source": "using-with-server-side-languages-php-creating-charts-with-data-from-a-database-example-3.js", "id": "3"} %}
+{% embed_chart using-with-server-side-languages-php-creating-charts-with-data-from-a-database-example-3.js %}
 
 Before we dive into the code, let’s see what the JSON data for a multi-series combination 2D chart should look like. We have a sales data of Harry's Supermart for last year.
 
@@ -376,7 +376,7 @@ In the code below, you can see the data for 12 months.
 
 The final JSON code that we need for this sample should be as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "chart": {
         "caption": "Harry's SuperMart",
@@ -500,11 +500,11 @@ The final JSON code that we need for this sample should be as shown below:
         }]
     }]
 }
-{% endraw %}{% endhighlight %}
+```
 
 Now let’s move on to the PHP code that will generate the above JSON data.
 
-{% highlight php lineanchors %}{% raw %}
+```php
 <?php
 
 /* Include the `include/fusioncharts.php` file that contains functions to embed the charts.*/
@@ -611,6 +611,6 @@ if ($dbhandle->connect_error) {
     </body>
 
     </html>
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info">Want to try out the above samples at your local environment? You can download the samples from <a href="https://github.com/fusioncharts/php-wrapper/archive/master.zip" target="_blank">here </a>.</p>

@@ -28,7 +28,7 @@ In this section, you will be shown how the ASP.NET wrapper uses each of these me
 
 A multi-series line chart that shows the sales data for six products for the previous and the current year is shown below:
 
-{% embed_chart {"source": "using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-1.js", "id": "1"} %}
+{% embed_chart using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-1.js %}
 
 As an example, we will look at how you can create this chart by generating a JSON string from the chart data contained in a 2D array.
 
@@ -40,7 +40,7 @@ The data structure that goes into the **../ArrayExample/MultiSeriesJSON.aspx** f
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
     <%@ Page Language="C#" AutoEventWireup="true" CodeFile="MultiSeriesJSON.aspx.cs" Inherits="ArrayExample_Default" %>
 
         <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -60,11 +60,11 @@ The data structure that goes into the **../ArrayExample/MultiSeriesJSON.aspx** f
             </body>
         </html>
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
   <div class='tab xml-tab'>
-     {% highlight javascript lineanchors %}{% raw %}
+```javascript
 
      <%@ Page Language="VB" AutoEventWireup="false" CodeFile="MultiSeriesJSON.aspx.vb" Inherits="Samples_ArrayExample_MultiSeriesJSON" %>
 
@@ -84,7 +84,7 @@ The data structure that goes into the **../ArrayExample/MultiSeriesJSON.aspx** f
         </body>
         </html>
               
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
 </div>
@@ -98,7 +98,7 @@ The data structure that goes into the code behind **../ArrayExample/MultiSeriesJ
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
     using System;
     using System.Collections;
     using System.Configuration;
@@ -282,11 +282,11 @@ The data structure that goes into the code behind **../ArrayExample/MultiSeriesJ
       }
     }
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
   <div class='tab xml-tab'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
 
     Imports System.Collections
     Imports System.Configuration
@@ -395,7 +395,7 @@ The data structure that goes into the code behind **../ArrayExample/MultiSeriesJ
         End Sub
     End Class
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
 </div>
@@ -406,7 +406,7 @@ To know more about the attributes that you can configure for the multi-series li
 
 A combination chart that shows the quarterly sales details—the revenue generated and the units sold—for product A is shown below:
 
-{% embed_chart {"source": "using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-2.js", "id": "2"} %}
+{% embed_chart using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-2.js %}
 
 We will look at how you can create this chart using an XML string generated from data contained in a 2D array.
 
@@ -418,7 +418,7 @@ The data structure that goes into the **../ArrayExample/CombinationXML.aspx** fi
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
     <%@ Page Language="C#" AutoEventWireup="true" CodeFile="CombinationXML.aspx.cs" Inherits="ArrayExample_Combination" %>
 
             <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -438,11 +438,11 @@ The data structure that goes into the **../ArrayExample/CombinationXML.aspx** fi
                 </body>
             </html>
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
   <div class='tab xml-tab'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
      <%@ Page Language="VB" AutoEventWireup="false" CodeFile="CombinationXML.aspx.vb" Inherits="Samples_ArrayExample_CombinationXML" %>
 
       <!DOCTYPE html>
@@ -461,7 +461,7 @@ The data structure that goes into the **../ArrayExample/CombinationXML.aspx** fi
       </body>
       </html>
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
 </div>
@@ -475,7 +475,7 @@ The data structure that goes into the code behind **../ArrayExample/CombinationX
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
     using System;
     using System.Data;
     using System.Configuration;
@@ -594,11 +594,11 @@ The data structure that goes into the code behind **../ArrayExample/CombinationX
     }
            
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
   <div class='tab xml-tab'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
       
       Imports System.Data
       Imports System.Configuration
@@ -687,7 +687,7 @@ The data structure that goes into the code behind **../ArrayExample/CombinationX
           End Sub
       End Class
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
 </div>
@@ -700,7 +700,7 @@ To know more about the attributes that you can configure for the multi-series co
 
 A column 3D chart that shows the monthly revenue for the last year at Harry’s SuperMart is shown below:
 
-{% embed_chart {"source": "using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-3.js", "id": "3"} %}
+{% embed_chart using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-3.js %}
 
 We will look at how you can create this gauge by loading data from a `.json` file.
 
@@ -712,7 +712,7 @@ The data structure that goes into the **../BasicExample/JSONURL.aspx** file is g
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
  
       <%@ Page Language="C#" AutoEventWireup="true" CodeFile="JSONUrl.aspx.cs" Inherits="BasicExample_BasicChart" %>
 
@@ -732,11 +732,11 @@ The data structure that goes into the **../BasicExample/JSONURL.aspx** file is g
           </body>
       </html>
            
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
   <div class='tab xml-tab'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
       
       <%@ Page Language="VB" AutoEventWireup="false" CodeFile="JSON_URL.aspx.vb" Inherits="Samples_BasicExamples_JSON_URL" %>
 
@@ -757,7 +757,7 @@ The data structure that goes into the **../BasicExample/JSONURL.aspx** file is g
       </body>
       </html>
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
 </div>
@@ -771,7 +771,7 @@ The data structure that goes into the code behind **../BasicExample/JSONURL.aspx
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
     using System;
     using System.Collections;
     using System.Configuration;
@@ -804,11 +804,11 @@ The data structure that goes into the code behind **../BasicExample/JSONURL.aspx
     }
        
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
   <div class='tab xml-tab'>
-    {% highlight javascript lineanchors %}{% raw %}  
+```javascript  
    
       Imports System.Collections
       Imports System.Configuration
@@ -838,7 +838,7 @@ The data structure that goes into the code behind **../BasicExample/JSONURL.aspx
 
       End Class
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
 </div>
@@ -850,7 +850,7 @@ To know more about the attributes that you can configure for the column 3D chart
 
 An angular gauge showing the customer satisfaction score at Los Angeles Topanga is shown below:
 
-{% embed_chart {"source": "using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-4.js", "id": "4"} %}
+{% embed_chart using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-4.js %}
 
 We will look at how you can create this gauge by loading data from a `.xml` file.
 
@@ -862,7 +862,7 @@ The data structure that goes into the **../BasicExample/XMLURL.aspx** file is gi
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
     <%@ Page Language="C#" AutoEventWireup="true" CodeFile="XMLUrl.aspx.cs" Inherits="BasicExample_BasicChart" %>
 
       <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -883,11 +883,11 @@ The data structure that goes into the **../BasicExample/XMLURL.aspx** file is gi
       </html>
              
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
   <div class='tab xml-tab'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
      
       <%@ Page Language="VB" AutoEventWireup="false" CodeFile="XML_URL.aspx.vb" Inherits="Samples_BasicExamples_XML_URL" %>
 
@@ -908,7 +908,7 @@ The data structure that goes into the **../BasicExample/XMLURL.aspx** file is gi
       </body>
       </html>
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
 </div>
@@ -922,7 +922,7 @@ The data structure that goes into the code behind **../BasicExample/XMLURL.aspx.
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
     using System;
     using System.Collections;
     using System.Configuration;
@@ -957,11 +957,11 @@ The data structure that goes into the code behind **../BasicExample/XMLURL.aspx.
            }
       }  
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
   <div class='tab xml-tab'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
 
       Imports System.Collections
       Imports System.Configuration
@@ -990,7 +990,7 @@ The data structure that goes into the code behind **../BasicExample/XMLURL.aspx.
           End Sub
       End Class
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
 </div>
@@ -1009,7 +1009,7 @@ Given below are a few tips that, although applicable while using FusionCharts, n
     <td><strong>Single-series Chart</strong></td>
   </tr>
   <tr>
-    <td>{% embed_data {"source": "using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-5.js"} %}
+{% embed_data using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-5.js %}
 For an example, click [here]{% linkTo tutorials/chart-guide/standard-charts/creating-standard-charts.md %}.
     </td>
   </tr>
@@ -1017,7 +1017,7 @@ For an example, click [here]{% linkTo tutorials/chart-guide/standard-charts/crea
     <td><strong>Multi-series Chart</strong></td>
   </tr>
   <tr>
-    <td>{% embed_data {"source": "using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-6.js"} %}
+{% embed_data using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-6.js %}
 For an example, click [here]{% linkTo tutorials/chart-guide/multi-series-charts/creating-multi-series-charts.md %}.
     </td>
   </tr>

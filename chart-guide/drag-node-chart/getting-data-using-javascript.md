@@ -14,7 +14,7 @@ Once the chart is rendered, to access the chart’s updated data as JSON, simply
 
 The code snippet to do this is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 //Get a reference to our chart
 var ourChart = FusionCharts("NodeChart");
@@ -25,13 +25,13 @@ var jsonRtn = ourChart.getJSONData();
 //Show it to user in alert box.
 alert(JSON.stringify(jsonRtn));
 
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info">The function `getJSONData()` returns the latest or changed data. This function is also used to retrieve the original data from the chart. To get the original data from the chart you need `false` as a parameter to the function. For example, `var jsonRtn = ourChart.getJSONData(false);` </p>
 
 To understand this, the sample drag-node chart we will use looks like this:
 
-{% embed_all {"source": "chart-guide-drag-node-chart-getting-data-using-javascript-example.js", "id": "1"} %}
+{% embed_all chart-guide-drag-node-chart-getting-data-using-javascript-example.js %}
 
 
 
@@ -50,7 +50,7 @@ The drag-node chart rendered after making these updates looks like this:
 
 Now if you wish to get the current data using the code `var jsonRtn = ourChart.getJSONData(); alert(JSON.stringify(jsonRtn));`, the updated data will be shown. The modified part of the updated data is shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "chart": {
             ...
@@ -111,4 +111,4 @@ Now if you wish to get the current data using the code `var jsonRtn = ourChart.g
     }
 }
 
-{% endraw %}{% endhighlight %}
+```

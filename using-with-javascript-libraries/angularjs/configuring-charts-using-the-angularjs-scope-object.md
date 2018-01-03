@@ -28,22 +28,22 @@ This articles describes how you can use the scope object to:
 
 A column 2D chart configured to update chart data dynamically is shown below:
 
-{% embed_chart {"source": "using-with-javascript-libraries-angularjs-configuring-charts-using-the-angularjs-scope-object-example-1.js", "id": "1"} %}
+{% embed_chart using-with-javascript-libraries-angularjs-configuring-charts-using-the-angularjs-scope-object-example-1.js %}
 
 
 The HTML code for this chart is given below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <!-- The `fusioncharts` directive is used as an attribute of the `<div> element. -->
 <div fusioncharts width="400" height="300" type="column2d" , datasource="{{dataSource}}"></div>
 <!-- Create a button, which when clicked will call the `updateMyChartData()` function. -->
 <p><a class="btn btn-default" ng-click="updateMyChartData()">Click me to change data</a></p>
 
-{% endraw %}{% endhighlight %}
+```
 
 The AngularJS code for the chart is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 $scope.dataSource = {
     chart: {
         caption: "Top 5 stores in last month by revenue",
@@ -78,19 +78,19 @@ $scope.updateMyChartData = function() {
     $scope.dataSource.data[3].value = "210000";
 }
 
-{% endraw %}{% endhighlight %}
+```
 
 ## Updating the Chart Attributes Dynamically
 
 As an example, look at how you can change the alignment of the chart caption, dynamically.
 A column 2D chart configured to let you do this is shown below:
 
-{% embed_chart {"source": "using-with-javascript-libraries-angularjs-configuring-charts-using-the-angularjs-scope-object-example-1a.js", "id": "2"} %}
+{% embed_chart using-with-javascript-libraries-angularjs-configuring-charts-using-the-angularjs-scope-object-example-1a.js %}
 
 Three radio buttons are shown below the chart. Click the appropriate one to set the required alignment.
 The HTML code for this chart is given below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <div fusioncharts width="400" height=" 300" type="column2d",dataSource=" {{dataSource}}"></div>
 <p>
     Change caption alignment:
@@ -100,11 +100,11 @@ The HTML code for this chart is given below:
     <input type="radio" id="right" name="captionalignment" ng-click="rightAlignCaption()"> Right </input>
 </p>
 
-{% endraw %}{% endhighlight %}
+```
 
 The AngularJS code for this is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 $scope.datasource = {
     chart: {
         caption: "Quarterly Revenue for FY2013-2014",
@@ -136,7 +136,7 @@ $scope.rightAlignCaption = function() {
     $scope.dataSource.chart.captionAlignment = "right";
 };
 
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info">For a list of other chart attributes that you can update for a column 2D chart, click [here]{% linkTo attrs.md chart=column2d %}.</p>
 
@@ -144,22 +144,22 @@ $scope.rightAlignCaption = function() {
 
 The quarterly revenue column 2D chart configured to listen to the `dataplotClick` event is shown below:
 
-{% embed_chart {"source": "using-with-javascript-libraries-angularjs-configuring-charts-using-the-angularjs-scope-object-example-2.js", "id": "3"} %}
+{% embed_chart using-with-javascript-libraries-angularjs-configuring-charts-using-the-angularjs-scope-object-example-2.js %}
 
 When a data plot is clicked, the text **Selected Value: **rendered below the chart is updated to show the value of that data plot.
 
 The HTML code for this chart is given below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <div fusioncharts width="600" height="400" type="column2d" , datasource="{{dataSource}}" events="events"></div>
 <!-- The `selectedValue` variable is defined to store the label and the value of the data plot that is clicked. -->
 <p>Selected Value:: {{ selectedValue }}</p>
 
-{% endraw %}{% endhighlight %}
+```
 
 The AngularJS code for this chart is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 $scope.dataSource = {
     chart: {
@@ -200,4 +200,4 @@ $scope.events = {
     }
 }
 
-{% endraw %}{% endhighlight %}
+```

@@ -14,7 +14,7 @@ In this section, you will be shown how you can work with the FusionCharts events
 
 A chart with the `dataPlotClick` event configured using the jQuery helper looks like this:
 
-{% embed_chart {"source": "using-with-javascript-libraries-jquery-handling-events-using-jquery-example-1.js", "id": "1"} %}
+{% embed_chart using-with-javascript-libraries-jquery-handling-events-using-jquery-example-1.js %}
 
 <div id='messageView' style='width:250px; text-align:center; font-size:12px; color:#333; padding:10px; margin:20px 100px'>Click on a data plot to trigger event</div>
 
@@ -22,7 +22,7 @@ When a data plot on the chart is clicked, `dataPlotClick` event is fired and the
 
 The code snippet for this chart is shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 $('#chart-container').insertFusionCharts({
     type: 'column2d',
     width: '450',
@@ -42,6 +42,6 @@ $('#chart-container').insertFusionCharts({
 $('#chart-container').bind('fusionchartsdataplotclick', function(event, args) {
     $('#messageView').text("You selected " + args.toolText);
 });
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info"> The complete list of events exposed by FusionCharts is available [here]{% linkTo FusionCharts.events %}. These events can be used with the FusionCharts jQuery helper by prefixing them with the text "fusioncharts" and using the lowercase representation of the event name. For example, the `beforeRender` event will be named as `fusionchartsbeforerender`. This is done to avoid conflict with the existing jQuery events that might have the same names. The parameters passed to the event handler function, however, are the same. </p>

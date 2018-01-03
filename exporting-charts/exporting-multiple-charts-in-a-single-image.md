@@ -24,10 +24,10 @@ Take a look at the sample shown below. Click the __Export Charts__ button to exp
 
 <input type="submit" value="Export Charts" onclick="batchExportConfig();" />
 
-{% embed_chart {"source": "exporting-multiple-charts-in-a-single-image-example-1.js", "id": "1"} %}
-{% embed_chart {"source": "exporting-multiple-charts-in-a-single-image-example-2.js", "id": "2"} %}
-{% embed_chart {"source": "exporting-multiple-charts-in-a-single-image-example-3.js", "id": "3"} %}
-{% embed_chart {"source": "exporting-multiple-charts-in-a-single-image-example-4.js", "id": "4"} %}
+{% embed_chart exporting-multiple-charts-in-a-single-image-example-1.js %}
+{% embed_chart exporting-multiple-charts-in-a-single-image-example-2.js %}
+{% embed_chart exporting-multiple-charts-in-a-single-image-example-3.js %}
+{% embed_chart exporting-multiple-charts-in-a-single-image-example-4.js %}
 
 
 The image thus downloaded is as shown below:
@@ -121,7 +121,7 @@ For the above exported image, we have specified the:
 
 The data structure of the `batchExport()` method, to export the charts in the above sample is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 batchExportConfig = function() {
 	FusionCharts.batchExport({
@@ -137,7 +137,7 @@ batchExportConfig = function() {
   	});
 };
 
-{% endraw %}{% endhighlight %}
+```
 
 ## Selectively Exporting Charts
 
@@ -149,10 +149,10 @@ Take a look at the sample shown below:
 
 <input type="submit" value="Export Charts" onclick="selectiveBatchExportConfig();" />
 
-{% embed_chart {"source": "exporting-multiple-charts-in-a-single-image-example-1.js", "id": "5"} %}
-{% embed_chart {"source": "exporting-multiple-charts-in-a-single-image-example-2.js", "id": "6"} %}
-{% embed_chart {"source": "exporting-multiple-charts-in-a-single-image-example-3.js", "id": "7"} %}
-{% embed_chart {"source": "exporting-multiple-charts-in-a-single-image-example-4.js", "id": "8"} %}
+{% embed_chart exporting-multiple-charts-in-a-single-image-example-1.js %}
+{% embed_chart exporting-multiple-charts-in-a-single-image-example-2.js %}
+{% embed_chart exporting-multiple-charts-in-a-single-image-example-3.js %}
+{% embed_chart exporting-multiple-charts-in-a-single-image-example-4.js %}
 
 When you click the __Export Charts__ button in this sample, the image downloaded is as shown below:
 
@@ -168,7 +168,7 @@ For the above exported image, we have specified the:
 
 Therefore, to download only the charts for the years __2015__ and __2012__, this is how you code the `batchExport()` method:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 batchExportConfig1 = function() {
 	FusionCharts.batchExport({
@@ -184,6 +184,6 @@ batchExportConfig1 = function() {
   	});
 };
 
-{% endraw %}{% endhighlight %}
+```
 
 <script pagespeed_no_defer="" type="text/javascript" data-chart='true' src='{{ site.baseurl }}/resources/js/exporting-multiple-charts-in-a-single-image.js'></script>

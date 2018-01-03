@@ -12,18 +12,18 @@ Another advantage of using the zoom-line dual y-axis chart is when you want to c
 
 The chart below shows a zoom-line dual y-axis chart created to compare unique footfall with the sales (in dollars), for each day of the previous year.
 
-{% embed_all {"source": "chart-guide-zoom-line-dy-chart-example-1.js", "id": "1"} %} 
+{% embed_all chart-guide-zoom-line-dy-chart-example-1.js %}
 
 
 ## Brief Description of the Data Structure
 
 In the JSON data, attributes and their corresponding values are written in the key-value pair format, as shown below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 "<attributeName>": “<value>”
 
-{% endraw %}{% endhighlight %}
+```
 
 Given below is a brief description of the data structure used to create the above chart:
 <table>

@@ -11,7 +11,7 @@ FusionCharts Suite XT gives you an option to render your charts as thumbnail ver
 
 Shown below is an example with chart thumbnails that enlarge on click.
 
-{% embed_chart {"source": "render-thumbnail-versions-of-chart-example-1.js", "id": "1"} %}
+{% embed_chart render-thumbnail-versions-of-chart-example-1.js %}
 
 Chart thumbnails are characterised by the following:
 
@@ -182,7 +182,7 @@ An image type presentation makes it necessary to be visually static. Some of the
 
 The JavaScript code to show the above effect is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 	FusionCharts.ready(function() {
     // write a function which creates a thumbnail of the required dimensions but turning off some of the properties which are not required in a thumbnail, for some other charts there might be a few more additional properties that need to be turned off.
     var createThumbNail = function(chartId, width, height, divId) {
@@ -314,4 +314,4 @@ The JavaScript code to show the above effect is given below:
     // render column chart by default
     revenueChartColumn.render();
 });
-{% endraw %}{% endhighlight %}
+```

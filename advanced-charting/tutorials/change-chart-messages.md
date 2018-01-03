@@ -66,11 +66,11 @@ In this section, you will be shown how yoou can:
 
 A simple column 2D chart that displays custom dataLoadStartMessage is shown below:
 
-{% embed_chart {"source": "change-chart-messages-example-1.js", "id": "1"} %}
+{% embed_chart change-chart-messages-example-1.js %}
 
 The constructor for the chart is shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 	var revenueChart = new FusionCharts({
 	    type: 'column2d',
 	    dataLoadStartMessage: "Fetching revenue data for the previous year",
@@ -80,7 +80,7 @@ The constructor for the chart is shown below:
 	    dataFormat: 'xmlurl',
 	    dataSource: 'columndata.php'
 	});
-{% endraw %}{% endhighlight %}
+```
 
 Simlarly, other chart messages can be set using constructor parameters.
 
@@ -111,12 +111,12 @@ To apply common styling to all chart messages, use these attributes:
 
 A column 2D chart that has custom style for all messages looks like this:
 
-{% embed_chart {"source": "change-chart-messages-example-2.js", "id": "2"} %}
+{% embed_chart change-chart-messages-example-2.js %}
 
 
 The constructor data for the chart is shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 	var revenueChart = new FusionCharts({
 	    type: 'column2d',
 	    dataLoadStartMessage: "Fetching revenue data for the previous year",
@@ -129,17 +129,17 @@ The constructor data for the chart is shown below:
 	    dataFormat: 'xmlurl',
 	    dataSource: 'columndata.php'
 	});
-{% endraw %}{% endhighlight %}
+```
 
 To override styling for individual chart messages, there are attributes corresponding to each type of message. These attributes use a common scheme. Append Font, FontSize or Color to the specific chart message constructor parameter to customise the font, font-size or color of the message respectively.
 
 For example, to customise styling of dataLoadStartMessage, the attributes will be:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 	dataLoadStartMessageFont: 'Helvetica',
 	dataLoadStartMessageFontSize: '24',
 	dataLoadStartMessageColor: ‘#00FF00'
-{% endraw %}{% endhighlight %}
+```
 
 
 Given below is a table of all the attributes for applying styles for each of these messages:

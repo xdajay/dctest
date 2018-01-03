@@ -11,11 +11,11 @@ This section demonstrates rendering a chart via npm.
 
 Take a look at the column 2D chart shown below:
 
-{% embed_chart {"source": "chart-guide-standard-charts-creating-standard-charts-example-1.js", "id": "1"} %}
+{% embed_chart chart-guide-standard-charts-creating-standard-charts-example-1.js %}
 
 The data structure needed to render this chart via npm is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 var FusionCharts = require("fusioncharts");
 require("fusioncharts/fusioncharts.charts")(FusionCharts);
 var chart = new FusionCharts ({
@@ -76,4 +76,4 @@ var chart = new FusionCharts ({
 	}
 }).render("chartContainer");
 
-{% endraw %}{% endhighlight %}
+```

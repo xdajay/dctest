@@ -10,7 +10,7 @@ Let us build our first chart using FusionCharts Suite XT! Throughout this docume
 
 Let's start with a simple "Monthly revenue" chart, which we will plot in a Column 2D chart. Once done, it should look as under:
 
-{% embed_chart {"source": "getting-started-your-first-charts-building-your-chart-example1.js", "id": "1"} %}
+{% embed_chart getting-started-your-first-charts-building-your-chart-example-1.js %}
 
 The data for this chart can be represented in a table as under:
 
@@ -32,12 +32,6 @@ December| $730,000
 ### Let's Begin
 
 Let's now get to building the chart. There are 5 simple steps to building a chart using FusionCharts Suite XT:
-
-1. <a href="/getting-started/building-your-first-chart.md#installing-fusioncharts-suite-xt-for-your-application">Installing FusionCharts Suite XT for your application</a>
-2. <a href="/getting-started/building-your-first-chart.md#converting-your-tabular-data-to-fusioncharts-suite-xt-jsonxml-format">Converting your data to a JSON or XML format</a>
-3. <a href="/getting-started/building-your-first-chart.md#including-fusioncharts-suite-xt-library-in-your-page">Including the FusionCharts Suite XT JavaScript library in your HTML page</a>
-4. <a href="/getting-started/building-your-first-chart.md#creating-a-container-for-your-chart-in-the-web-page">Creating a container `<div>` for the chart</a>
-5. <a href="/getting-started/building-your-first-chart.md#creating-an-instance-of-the-chart">Using the new `FusionCharts()` constructor to create the chart instance, and then calling the `render()` method</a>
 
 ### Installing FusionCharts Suite XT for your application
 
@@ -61,7 +55,7 @@ FusionCharts Suite XT JavaScript library accepts data in JSON or XML format only
 For this example, the tabular data above, when converted to FusionCharts Suite XT JSON/XML format, looks as under:
 
 
-{% embed_data {"source": "getting-started-your-first-charts-building-your-chart-example1.js"} %}
+{% embed_data getting-started-your-first-charts-building-your-chart-example-1.js %}
 
 ### Including FusionCharts Suite XT library in your page
 
@@ -69,7 +63,7 @@ To include the FusionCharts Suite XT JavaScript library in your HTML page, you u
 
 If you have to generate maps, you will need to include other files in your page, as we will see in the later sections.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
 <title>My first chart using FusionCharts Suite XT</title>
@@ -77,7 +71,7 @@ If you have to generate maps, you will need to include other files in your page,
 <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fint.js"></script>
 </head>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 ### Creating a container for your chart in the web page
 
@@ -290,3 +284,4 @@ In case something went wrong and you are unable to see the chart, check for the 
 Click here for more information on [Troubleshooting]{% linkTo tutorials/troubleshooting/debugger.md %}.
 
 Now that Harry can monitor his monthly revenues using this interactive chart, let's build a gauge to show him the customer satisfaction score in the next section.
+

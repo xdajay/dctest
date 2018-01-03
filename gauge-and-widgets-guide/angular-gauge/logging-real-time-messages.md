@@ -26,7 +26,7 @@ In this section, you will be shown how you can:
 
 A real-time angular gauge configured to set up the message logger looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-logging-real-time-messages-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-logging-real-time-messages-example-1.js %}
 
 In the above gauge, you will see a small icon menu appear at the bottom-left of the gauge. The message logger, which does not appear by default, appears when you click this icon and select the `Show Log` option from the menu rendered. To close the message logger window, click the close button in the top-right corner of the window or click anywhere outside the window.
 
@@ -93,7 +93,7 @@ Each real-time update of the chart can result in addition of message(s) to the l
 
 A real-time angular gauge configured to stream messages using the message logger looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-logging-real-time-messages-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-logging-real-time-messages-example-2.js %}
 
 Given below is a brief description of the attributes in the real-time data stream that help you stream messages:
 
@@ -139,9 +139,9 @@ Given below is a brief description of the attributes in the real-time data strea
 
 Shown below is an example of real-time update string passed by the server to the message logger:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 &value=84&msgTitle=24-07-2014 02:22:51&msgText=Server CPU Utilization : 84
-{% endraw %}{% endhighlight %}
+```
 
 Here, we first have the `&value` parameter which is absorbed by the gauge for data update. Next, we have the `msgTitle` and the `msgText` parameters which get absorbed by the message logger. Here, we have set the date & time as the title and the text "Server Utilization: ", along with the value 84, as the message.
 
@@ -153,22 +153,22 @@ Take a look at the chart rendered above to see how this update appears in the ac
 
 Shown below is a simple example of message type ERROR:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 &value=84&msgTitle=24-07-2014 02:22:51&msgText=Server CPU Utilization : 84&msgType=ERROR
-{% endraw %}{% endhighlight %}
+```
 
 A real-time angular gauge configured to read this message looks like this: When a chart reads this, it'll display the message as under:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-logging-real-time-messages-example-2.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-logging-real-time-messages-example-2.js %}
 
 
 ### Creating Messages with an External Link
 
 To create and render a message as a link, you will need to set the URL Encoded link as the value for the `msgText` attribute and set the `msgType` to LINK, as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 &value=84&msgTitle=24-07-2014 02:22:51&msgText=http%3A%2F%2Fwww%2Efusioncharts%2Ecom%3Fid%3D34&msgType=LINK
-{% endraw %}{% endhighlight %}
+```
 
 In the above example, we're linking the message to http://www.fusioncharts.com?id=34 - we've URL Encoded the link, as it contains special characters (? in this case).
 
@@ -178,15 +178,15 @@ In the above example, we're linking the message to http://www.fusioncharts.com?i
 
 To render custom text as a link, set the `msgType` attribute to INFO and provide the entire link in HTML code to the `msgText` attribute, as shown in the example below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 &value=84&msgTitle=24-07-2014 02:22:51&msgText=<A HREF='http://www.fusioncharts.com?id=34'><U>Server CPU Utilization : 84</U></A>&msgType=INFO
-{% endraw %}{% endhighlight %}
+```
 
 After URL Encoding
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 &value=84&msgTitle=24-07-2014%2002:22:51&msgText=%3CA%20HREF='http://www.fusioncharts.com?id=34'%3E%3CU%3EServer%20CPU%20Utilization%20:%2084%3C/U%3E%3C/A%3E&msgType=INFO
-{% endraw %}{% endhighlight %}
+```
 
 To specify a link, you will need to output the HTML code for the link as `msgText`. Add the `<u>` tag in the HTML code if you need to underline the link. Finally, URLEncode the entire `msgText` parameter and then stream to the chart.
 
@@ -194,15 +194,15 @@ To specify a link, you will need to output the HTML code for the link as `msgTex
 
 You can instruct the gauge to clear the contents of the visible message logger by sending the command shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 &clearLog=1
-{% endraw %}{% endhighlight %}
+```
 
 You can also send send it as a part of a message stream, as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 &value=84&msgTitle=24-07-2014 02:22:51&msgText=Server CPU Utilization : 84&msgType=ERROR&clearLog=1
-{% endraw %}{% endhighlight %}
+```
 
 This will clear all the contents of the existing message logger and start afresh.
 
@@ -214,12 +214,12 @@ You have seen how you can log messages streamed from the server in the in-built 
 
 A real-time angular gauge configured to handle messages using custom JavaScript functions looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-logging-real-time-messages-example-3.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-logging-real-time-messages-example-3.js %}
 
 
 A simple implementation of the `myFunction` is as follows:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 var myFunction = function(strMsgId, strMsgTitle, strMsgText, strMsgType){
             //This method is invoked when the chart streams real-time message to JS.
             //Order of parameters - strMsgId, strMsgTitle, strMsgText, strMsgType
@@ -229,7 +229,7 @@ var myFunction = function(strMsgId, strMsgTitle, strMsgText, strMsgType){
             //- strMsgType - Type of each message - INFO, ERROR, LITERAL or LINK
            alert("A message was streamed from server. \nMessage Id: " + strMsgId + "\nMessage Title: " + strMsgTitle + "\nMessage Text: " + strMsgText + "\nMessage Type: " + strMsgType);
         }
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info">In place of a custom function you can also use JavaScript’s native function (e.g `alert`) to show messages streamed from the server to the client. But in that case you will only be able to show the value of  the `msgText` parameter passed from the server.</p>
 
@@ -243,7 +243,7 @@ FusionCharts Suite XT allows you to configure the message logger. Using its clie
 
 A real-time angular gauge with its message logger configured using JavaScript API looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-logging-real-time-messages-example-4.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-logging-real-time-messages-example-4.js %}
 
 In order to manipulate the message logger using JavaScript API you need to get a reference of the gauge. Once this reference  is obtained, you can use any of API methods on the gauge’s logger (provided it's set to on)
 

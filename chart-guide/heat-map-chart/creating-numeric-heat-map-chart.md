@@ -94,7 +94,7 @@ The following data will be used to categorize the rating for a feature as bad, a
 
 The numeric heat map chart thus rendered looks like this:
 
-{% embed_all {"source": "chart-guide-heat-map-chart-creating-numeric-heat-map-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-heat-map-chart-creating-numeric-heat-map-chart-example-1.js %}
 
 Given below is a brief description of the attributes used to create a simple numeric heat map chart:
 
@@ -142,7 +142,7 @@ There is one more method to plot numeric based heat map charts that allows you t
 
 The above chart with pre-defined rows and columns looks like this:
 
-{% embed_all {"source": "chart-guide-heat-map-chart-creating-numeric-heat-map-chart-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-heat-map-chart-creating-numeric-heat-map-chart-example-2.js %}
 
 Given below is a brief description of the attributes used to pre-define rows and columns:
 
@@ -180,7 +180,7 @@ Given below is a brief description of the attribute used to configure colors for
 
 Given below is a code snippet that shows how you can configure colors for individual cells:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "chart": {
             ...
@@ -209,6 +209,6 @@ Given below is a code snippet that shows how you can configure colors for indivi
     ],
     ...
 }
-{% endraw %}{% endhighlight %}
+```
 
 In the above data, the color attribute is used in two `data` elements to apply different colors for the first two cells of the chart. These two colors are different from the colors defined in the `colorRange` element. The transparency of the cell can also be controlled by using the `alpha` attribute with `data` object.

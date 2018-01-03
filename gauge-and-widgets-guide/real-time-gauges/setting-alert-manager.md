@@ -14,13 +14,13 @@ For example, if you are monitoring the CPU utilization on the server and want to
 
 An angular gauge configured to do this is shown below:
 
-{% embed_all {"source": "advanced-charting-real-time-gauges-setting-alert-manager-example-1.js", "id": "1"} %}
+{% embed_all advanced-charting-real-time-gauges-setting-alert-manager-example-1.js %}
 
 The above example shows the server CPU utilization of __akme.com__. The angular gauge is configured with three color-coded bands to identify levels of utilization of the server. When the CPU utilization is over 70%, an alert is set to display a warning message. The message to be displayed is passed to the `showAlert()` JavaScript method.
 
 The code snippet to set up the alert manager is as follows:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 chart {
     …..
     …….
@@ -38,7 +38,7 @@ chart {
     }
 }
 
-{% endraw %}{% endhighlight %}
+```
 
 The container element for `alert` is `alerts`, which is a child of the `chart`element.  `alert` is an array of objects where every object defines a threshold range (alert range). One of the following actions can be specified with any alert range:
 

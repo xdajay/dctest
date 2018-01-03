@@ -20,7 +20,7 @@ This section showcases how you can do this using the FusionCharts ASP.NET wrappe
 
 A multi-series line chart that shows the factory output by quantity for three factories is shown below:
 
-{% embed_chart {"source": "using-with-server-side-languages-asp-net-creating-charts-with-data-from-a-database-example-1.js", "id": "1"} %}
+{% embed_chart using-with-server-side-languages-asp-net-creating-charts-with-data-from-a-database-example-1.js %}
 
 Assume that you have a **factoryDB** database with the **factory_output** table that shows the number of units produced by three factories daily, from January 1, 2003 to January 20, 2003. In this example, you will be shown how you can use the FusionCharts ASP.NET wrapper and fetch data from this database to create the above multi-series line chart.
 
@@ -32,7 +32,7 @@ The data structure that goes into the **../DBExample/MSCharts.aspx** file is giv
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-  {% highlight javascript lineanchors %}{% raw %}
+```javascript
   <%@ Page Language="C#" AutoEventWireup="true" CodeFile="MSCharts.aspx.cs" Inherits="DBExample_MSCharts" %>
 
   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -51,11 +51,11 @@ The data structure that goes into the **../DBExample/MSCharts.aspx** file is giv
       </body>
   </html>
 
-  {% endraw %}{% endhighlight %}
+  ```
   </div>
 
   <div class='tab xml-tab'>
-  {% highlight javascript lineanchors %}{% raw %}
+```javascript
 
     <%@ Page Language="VB" AutoEventWireup="false" CodeFile="index.aspx.vb" Inherits="Samples_DBExample_index" %>
 
@@ -75,7 +75,7 @@ The data structure that goes into the **../DBExample/MSCharts.aspx** file is giv
       </body>
       </html>
 
-  {% endraw %}{% endhighlight %}
+  ```
   </div>
 
 </div>
@@ -89,7 +89,7 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-  {% highlight javascript lineanchors %}{% raw %}
+```javascript
   using System;
   using System.Collections;
   using System.Configuration;
@@ -211,11 +211,11 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
   }
 
 
-  {% endraw %}{% endhighlight %}
+  ```
   </div>
 
   <div class='tab xml-tab'>
-  {% highlight javascript lineanchors %}{% raw %}
+```javascript
     
     Imports System.Collections
     Imports System.Configuration
@@ -336,7 +336,7 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
       End Sub
     End Class
 
-  {% endraw %}{% endhighlight %}
+  ```
   </div>
 
 </div>

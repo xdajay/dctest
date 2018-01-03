@@ -26,7 +26,7 @@ The two types of Pareto charts available in the FusionCharts Suite XT are:
 
 A simple Pareto 2D chart looks like this:
 
-{% embed_all {"source": "chart-guide-pareto-chart-creating-a-pareto-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-pareto-chart-creating-a-pareto-chart-example-1.js %}
 
 
 
@@ -34,7 +34,7 @@ A simple Pareto 2D chart looks like this:
 
 A simple Pareto 3D chart looks like this:
 
-{% embed_all {"source": "chart-guide-pareto-chart-creating-a-pareto-chart-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-pareto-chart-creating-a-pareto-chart-example-2.js %}
 
 <p class="text-info"> To change the chart type from Pareto 2D to Pareto 3D, you only have to change the value of the `type` attribute from `pareto2d` to `pareto3d`.
 
@@ -44,11 +44,11 @@ The data for this chart is single series. Values have to be provided only for th
 
 In the JSON data, the attributes and their corresponding values are written in the following key-value pair format:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 "<attributeName>": "<value>"
 
-{% endraw %}{% endhighlight %}
+```
 
 Given below is a brief description of the data structure used to create the above Pareto 2D chart:
 

@@ -32,21 +32,21 @@ Trend-lines are horizontal or vertical reference lines that can be used to defin
 
 A column 2D chart with a trend-line is shown below:
 
-{% embed_chart {"source": "using-with-javascript-libraries-reactjs-configuring-advanced-features-using-reactjs-example-1.js", "id": "1"} %}
+{% embed_chart using-with-javascript-libraries-reactjs-configuring-advanced-features-using-reactjs-example-1.js %}
 
 The line labeled __Target - $175K__ is a trend-line representing the targeted quarterly sales. This line is used as a visual reference to compare the actual sales with the targeted sales.
 
 An HTML container element to contain the rendered chart is created first, as shown below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 <div id="chart-container"></div>
 
-{% endraw %}{% endhighlight %}
+```
 
 The code to render this chart is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 var myDataSource = {
     "chart": {
@@ -95,7 +95,7 @@ ReactDOM.render(
     document.getElementById('chart-container')
 );
 
-{% endraw %}{% endhighlight %}
+```
 
 ## Adding Annotations on Charts
 
@@ -103,21 +103,21 @@ Annotations are graphical elements (different types of shapes, custom text, and 
 
 A column 2D chart with annotations is shown below:
 
-{% embed_chart {"source": "using-with-javascript-libraries-reactjs-configuring-advanced-features-using-reactjs-example-2.js", "id": "2"} %}
+{% embed_chart using-with-javascript-libraries-reactjs-configuring-advanced-features-using-reactjs-example-2.js %}
 
 In this chart, the text __Promotional activities for Butterfinger made it surpass Snickers, the highest selling brand for 3 years__ is an annotation of type text, the rectangle around this text is a rectangle annotation, and the chocolate bars are image annotations.
 
 An HTML container element to contain the rendered chart is created first, as shown below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 <div id="chart-container"></div>
 
-{% endraw %}{% endhighlight %}
+```
 
 The code to render this chart is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 var myDataSource = {
     "chart": {
@@ -229,5 +229,5 @@ ReactDOM.render(
     document.getElementById('chart-container')
 );
 
-{% endraw %}{% endhighlight %}
+```
 

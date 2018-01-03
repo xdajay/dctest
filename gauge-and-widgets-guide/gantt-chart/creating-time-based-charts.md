@@ -18,7 +18,7 @@ The 24-hour clock is a convention of time-keeping in which the day runs from mid
 
 So, to specify a time in the JSON data, you will have to define a "category" as shown in the code snippet below::
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 "category": [
     {
         "start": "00:00:00",
@@ -26,19 +26,19 @@ So, to specify a time in the JSON data, you will have to define a "category" as 
         "label": "Day"
     }
 ]
-{% endraw %}{% endhighlight %}
+```
 
 Or, you can define task as shown below:
 
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 "task": {
     "processid": "EMP121",
     "start": "08:00:00",
     "end": "12:30:00",
     "label": "Morning Shift"
 }
-{% endraw %}{% endhighlight %}
+```
 
 ## Time-based Gantt chart
 
@@ -46,7 +46,7 @@ As an example, we will plot a time-based Gantt chart that represents the time sh
 
 The "Development Division - Time Shifts" Gantt chart thus rendered looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-creating-time-based-chart-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-creating-time-based-chart-example-1.js %}
 
 
 

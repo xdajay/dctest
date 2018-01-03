@@ -30,7 +30,7 @@ In this section, you will be shown how you can:
 
 A column 2D chart configured with links that open in a pop-up window is shown below:
 
-{% embed_all {"source": "interactivity-drill-down-opening-in-pop-up-or-frames-example-1.js", "id": "1"} %}
+{% embed_all interactivity-drill-down-opening-in-pop-up-or-frames-example-1.js %}
 
 In the above chart, each time a data plot is clicked, the target URL configured for that data plot opens in a pop-up window.
 
@@ -126,7 +126,7 @@ Given below is a brief description of the attributes that can be configured for 
 
 <p class="text-info">Internally the chart decodes the URL that you set as the link. Before invoking the link, it again encodes the URL. If you are passing multilingual characters via a URL or do not want this decode-encode mechanism to be handled by the chart, you can use the `unescapeLinks` attribute as shown in the code snippet below :
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "chart": {
         "unescapeLinks": "0"
@@ -134,7 +134,7 @@ Given below is a brief description of the attributes that can be configured for 
     }
     ...
 }
-{% endraw %}{% endhighlight %}
+```
 
 </p>
 
@@ -144,7 +144,7 @@ FusionCharts Suite XT allows you to open links in specified frames on the web pa
 
 A column 2D chart configured with links that open in a frame is shown below:
 
-{% embed_all {"source": "interactivity-drill-down-opening-in-pop-up-or-frames-example-2.js", "id": "2"} %}
+{% embed_all interactivity-drill-down-opening-in-pop-up-or-frames-example-2.js %}
 
 Given below is a brief description of how the `link` attribute is used to open links in frames:
 

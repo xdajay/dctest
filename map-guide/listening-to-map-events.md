@@ -16,11 +16,11 @@ Entities in FusionCharts Suite XT raise 3 events  `entityRollOver` , `entityRoll
 
 Shown below is a map that captures data from the entity events and displays it in a message box below the map. Hover on individual continents to see the population of only that specific continent.
 
-{% embed_chart {"source": "map-guide-listening-to-map-events-1.js", "id": "1"} %}
+{% embed_chart map-guide-listening-to-map-events-1.js %}
 
 The data used to create this example is shown here
 
-{% embed_data {"source": "map-guide-listening-to-map-events-1.js"} %}
+{% embed_data map-guide-listening-to-map-events-1.js %}
 
 This is what we did in the above data structure
 
@@ -44,7 +44,7 @@ This is what we did in the above data structure
 
 The code for the example is shown here
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
     <title>A Data Driven Map</title>
@@ -131,7 +131,7 @@ FusionCharts.ready(function() {
     <textarea id="message" rows="4" cols="54" style='margin-left:10px;text-align:center'>"Total World Population 6.3 Billion" </textarea>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 ## Marker and Connector Events
 
@@ -139,11 +139,11 @@ Markers and Connectors raise events on mouse interactions like roll over, roll o
 
 Shown here is the world map that we built in {% linkTo tutorials/map-guide/adding-markers.md %} as part of the connectors section. It shows the busiest routes from the Heathrow.
 
-{% embed_chart {"source": "map-guide-listening-to-map-events-2.js", "id": "2"} %}
+{% embed_chart map-guide-listening-to-map-events-2.js %}
 
 The data used to create this example is shown here.
 
-{% embed_data {"source": "map-guide-listening-to-map-events-2.js"} %}
+{% embed_data map-guide-listening-to-map-events-2.js %}
 
 This is what we did in the above data structure
 
@@ -167,7 +167,7 @@ This is what we did in the above data structure
 
 The full HTML code for this sample is shown here
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
     <title>A Data Driven Map</title>
@@ -287,6 +287,6 @@ FusionCharts.ready(function() {
     <textarea id="message" rows="4" cols="54" style='margin-left:10px;text-align:center'>Roll over or click on a marker or connector </textarea>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 For a list of all parameters for each of these events refer to the [API Reference for events]{% linkTo FusionCharts.events %}.

@@ -28,13 +28,13 @@ FusionCharts Suite XT lets you draw annotations in any of the following shapes:
 
 Take a look at the column 2D chart shown below:
 
-{% embed_chart {"source": "advanced-charting-annotations-creating-annotations-creating-shape-annotations-example-1.js", "id": "1"} %}
+{% embed_chart advanced-charting-annotations-creating-annotations-creating-shape-annotations-example-1.js %}
 
 The rectangle around the text is a shape annotation.
 
 The JSON structure for creating image annotations is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 "chart": {
         ...
 },
@@ -55,7 +55,7 @@ The JSON structure for creating image annotations is given below:
         }]
     }]
 }
-{% endraw %}{% endhighlight %}
+```
 
 FusionCharts Suite XT includes several attributes to create and customize shape annotations. While many of these attributes are common to all shapes, some attributes work for only specific shapes.
 
@@ -333,4 +333,4 @@ The attributes used to configure an arc annotation are:
 
 The complete data structure for the column 2D chart with image annotations is given below:
 
-{% embed_data {"source": "advanced-charting-annotations-creating-annotations-creating-shape-annotations-example-1.js"} %}
+{% embed_data advanced-charting-annotations-creating-annotations-creating-shape-annotations-example-1.js %}

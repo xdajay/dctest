@@ -36,13 +36,13 @@ An example of a drill-down chart and its corresponding code, that implements lin
 
 For this example, a JavaScript function, `showAlert`, is defined to show the label and value of the data plot clicked. For example, when the data plot labeled __Apple__ is clicked, the `showAlert` function is invoked and an alert box is displayed with the data value and the label.
 
-{% embed_all {"source": "advanced-charting-drill-down-using-javascript-functions-as-links-example-1.js", "id": "1"} %}
+{% embed_all advanced-charting-drill-down-using-javascript-functions-as-links-example-1.js %}
 
 The code for the above example is given below:
 
 ### HTML code:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 <div id="chart-container">FusionCharts will render here</div>
 <!-- Drill-down: Simple Link Open in Same Page. Attribute: # link -->
@@ -55,7 +55,7 @@ The code for the above example is given below:
     -->
 </script>
 
-{% endraw %}{% endhighlight %}
+```
 
 ### JSON data:
 
@@ -70,7 +70,7 @@ For this example, the parameter string contains the data label and data value on
 ## The `JavaScript:` Prefix
 An example of a drill-down chart and its corresponding code, that implements linking using the `JavaScript: ` prefix, is shown below:
 
-{% embed_all {"source": "advanced-charting-drill-down-using-javascript-functions-as-links-example-2.js", "id": "2"} %}
+{% embed_all advanced-charting-drill-down-using-javascript-functions-as-links-example-2.js %}
 
 Similar to the above example, the `showAlert` function is defined to ahow an alert message that contains the clicked data plot's label and value.
 
@@ -78,7 +78,7 @@ The code for the above example is given below:
 
 ### HTML code:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 <div id="chart-container">FusionCharts will render here</div>
 <!-- Drill-down: Simple Link Open in Same Page. Attribute: # link -->
@@ -91,7 +91,7 @@ The code for the above example is given below:
     -->
 </script>
 
-{% endraw %}{% endhighlight %}
+```
 
 ### JSON data:
 

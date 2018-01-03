@@ -14,13 +14,13 @@ The FusionCharts jQuery helper makes it easy to select FusionCharts Suite XT cha
 
 Using the `:FusionCharts` jQuery Selector, you can select all FusionCharts Suite XT charts rendered in a HTML page. For instance, clicking the "Apply Theme" button in the column chart shown below changes the theme for the pie chart (further down in this page) also. This is because the `:FusionCharts` selector selects all the charts in the page. This is useful for making changes across multiple charts in an entire page.
 
-{% embed_chart {"source": "using-with-javascript-libraries-jquery-selecting-charts-using-jquery-example-1.js", "id": "1"} %}
+{% embed_chart using-with-javascript-libraries-jquery-selecting-charts-using-jquery-example-1.js %}
 
-{% embed_chart {"source": "using-with-javascript-libraries-jquery-selecting-charts-using-jquery-example-2.js", "id": "2"} %}
+{% embed_chart using-with-javascript-libraries-jquery-selecting-charts-using-jquery-example-2.js %}
 
 The code snippet for selecting all charts is shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 $('#applyTheme').click(function() {
     // Use `FusionCharts` jQuery selector and apply theme to the charts
     $(':FusionCharts').attrFusionCharts({
@@ -28,7 +28,7 @@ $('#applyTheme').click(function() {
     });
 });
 
-{% endraw %}{% endhighlight %}
+```
 
 The `:FusionCharts` selector selects all the charts in the specified context, which in this case is the current page. You can use it as a conventional jQuery selector.
 
@@ -40,14 +40,14 @@ Given below are a few code snippets that show how you can select charts in speci
 
 For applying a common theme to all charts inside all the `<div>` elements in the page, use the code snippet given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 $('div').attrFusionCharts({"theme": "fint"});
 
-{% endraw %}{% endhighlight %}
+```
 
 For applying a common theme to only those charts that belong to HTML elements having the `selectorExample` class, use the code snippet given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 $('.selectorExample’).attrFusionCharts({"theme": "fint"});
 
-{% endraw %}{% endhighlight %}
+```

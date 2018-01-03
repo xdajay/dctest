@@ -20,9 +20,9 @@ It is possible to call JavaScript methods when users interact with entities or m
 
 Shown here is a US map where each entity calls an external Google Maps API.
 
-{% embed_chart {"source": "map-guide-adding-drill-down-link.js", "id": "1"} %}
+{% embed_chart map-guide-adding-drill-down-link.js %}
 
-{% embed_data {"source": "map-guide-adding-drill-down-link.js"} %}
+{% embed_data map-guide-adding-drill-down-link.js %}
 
 Clicking on an entity opens up a pop up window with a full map of the state you clicked on.
 
@@ -30,17 +30,17 @@ Instructions on building the base US map and the data used can be found [here]{%
 
 Shown here is a snippet that configures the behaviour of the drill down as part of the entity.
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "id": "DC",
     "value": "2879000",
     "link": "j-drillDownState-DC|District of Columbia"
 }
-{% endraw %}{% endhighlight %}
+```
 
 Here is the full HTML code to build the map
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
     <title>A Data Driven Map</title>
@@ -307,7 +307,7 @@ FusionCharts.ready(function() {
     <div id="chart-container">A world map will load here!</div>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 Here the `drillDownState` method is called and the `DC|District of Columbia` is passed to it as parameter.
 
@@ -315,50 +315,50 @@ Here the `drillDownState` method is called and the `DC|District of Columbia` is 
 
 In the example shown below when a user clicks on the entity labelled DC, the url specified in `link` opens up in the same page.
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "id": "DC",
     "value": "2879000",
     "link": "Detailed/TotalSales.html"
 }
-{% endraw %}{% endhighlight %}
+```
 
 ### Open a URL in a new browser window
 
 In this example, when a user clicks on the entity labelled DC, the url specified in `link` opens up in a new browser window
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "id": "DC",
     "value": "2879000",
     "link": "n-Detailed/TotalSales.html"
 }
-{% endraw %}{% endhighlight %}
+```
 
 ### Open a URL in a specified frame/iframe
 
 In this example, when a user clicks on the entity labelled DC, the url specified in `link` opens up in a frame or iframe within the same browser window
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "id": "DC",
     "value": "2879000",
     "link": "F-Detailed/TotalSales.html"
 }
-{% endraw %}{% endhighlight %}
+```
 
 ### Open a URL in a pop-up window
 
 In this example, when a user clicks on the entity labelled DC, the url specified in `link` opens up in a pop up.
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
    "id": "DC",
     "value": "2879000",
     "link": "P-detailsPopUp,width=400,height=300,toolbar=no, scrollbars=no,resizable=no-Detailed/TotalSales.html"
 }
 
-{% endraw %}{% endhighlight %}
+```
 
 Here additionally the height, width, toolbar visibility and resizability of the new window are configured.
 
@@ -374,9 +374,9 @@ Here we will look at how one map can be configured to open another map when a us
 
 Shown below is a World population density map. Clicking on the North America entity opens up a US map showing population density by state
 
-{% embed_chart {"source": "map-guide-adding-drill-down-configurelink.js", "id": "2"} %}
+{% embed_chart map-guide-adding-drill-down-configurelink.js %}
 
-{% embed_data {"source": "map-guide-adding-drill-down-configurelink.js"} %}
+{% embed_data map-guide-adding-drill-down-configurelink.js %}
 
 This is what we did in the above data structure
 
@@ -392,7 +392,7 @@ This is what we did in the above data structure
 
 The full HTML code for this example is shown below.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
     <title>A Data Driven Map</title>
@@ -660,7 +660,7 @@ FusionCharts.ready(function() {
     <div id="chart-container">A world map will load here!</div>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 ### LinkedCharts from a map to a chart
 
@@ -670,11 +670,11 @@ Shown below is a US map that shows the functioning of a retail chain. The chain 
 
 Each drilled down chart shows the variation of average shipment cost and the daily shipments for states serviced by that specific distribution center.
 
-{% embed_chart {"source": "map-guide-adding-drill-down-linkedcharts.js", "id": "3"} %}
+{% embed_chart map-guide-adding-drill-down-linkedcharts.js %}
 
 The data used in the above chart is shown here
 
-{% embed_data {"source": "map-guide-adding-drill-down-linkedcharts.js"} %}
+{% embed_data map-guide-adding-drill-down-linkedcharts.js %}
 
 This is what we did in the above data structure
 
@@ -690,7 +690,7 @@ This is what we did in the above data structure
 
 The full code for the sample is shown here
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
     <title>A Data Driven Map</title>
@@ -1564,6 +1564,6 @@ FusionCharts.ready(function() {
     <div id="chart-container">A world map will load here!</div>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 That's it! You have just configured a map to drill down into a chart when the user clicks on an entity.

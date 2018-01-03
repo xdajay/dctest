@@ -40,11 +40,11 @@ The `insertFusionCharts` method renders charts inside a specified HTML element. 
 
 A chart rendered using the `insertFusionCharts` method is shown below:
 
-{% embed_chart {"source": "using-with-javascript-libraries-jquery-rendering-charts-using-jquery-example-1.js", "id": "1"} %}
+{% embed_chart using-with-javascript-libraries-jquery-rendering-charts-using-jquery-example-1.js %}
 
 The code snippet that shows how you can insert a new chart is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 $("#chart-container").insertFusionCharts({
     type: 'hlineargauge',
     width: '400',
@@ -66,7 +66,7 @@ $("#chart-container").insertFusionCharts({
         }
     }
 });
-{% endraw %}{% endhighlight %}
+```
 
 In the above example, the horizontal linear gauge has been rendered using the `insertFusionCharts` method. The constructor object is passed as an argument to the `insertFusionCharts` method.
 
@@ -76,11 +76,11 @@ The `appendFusionCharts` method renders a chart at the end of the specified HTML
 
 A column 2D chart appended to an existing pie 2D chart looks like this:
 
-{% embed_chart {"source": "using-with-javascript-libraries-jquery-rendering-charts-using-jquery-example-2.js", "id": "2"} %}
+{% embed_chart using-with-javascript-libraries-jquery-rendering-charts-using-jquery-example-2.js %}
 
 The code snippet that shows how you can append a chart is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 $('#chart-container').insertFusionCharts({
     type: 'pie2d',
     width: '450',
@@ -104,7 +104,7 @@ $('#btnClone').click(function() {
         'type': 'column2d'
     });
 });
-{% endraw %}{% endhighlight %}
+```
 
 In the above code snippet, the `cloneFusionCharts` method is used to create a column-chart clone of the existing pie-chart.This method finds all the charts in the selected element and returns a list of their clones.
 
@@ -122,11 +122,11 @@ The `prependFusionCharts` method works similar to the `appendFusionCharts` metho
 
 A column 2D chart prepended to an existing pie 2D chart looks like this:
 
-{% embed_chart {"source": "using-with-javascript-libraries-jquery-rendering-charts-using-jquery-example-3.js", "id": "3"} %}
+{% embed_chart using-with-javascript-libraries-jquery-rendering-charts-using-jquery-example-3.js %}
 
 The code snippet that shows how you can prepend a chart is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 $('#chart-container').insertFusionCharts({
     type: 'pie2d',
     width: '450',
@@ -152,6 +152,6 @@ $('#btnClone').click(function() {
         'type': 'column2d'
     });
 });
-{% endraw %}{% endhighlight %}
+```
 
 Similar to the `appendFusionCharts` method example, the `cloneFusionCharts` method is used here to clone the existing pie chart, which is then prepended as a column chart.

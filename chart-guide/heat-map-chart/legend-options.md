@@ -26,7 +26,7 @@ A simple icon legend looks as shown in the image below:
 
 A simple heat map chart rendered with an icon legend looks like this:
 
-{% embed_all {"source": "chart-guide-heat-map-chart-legend-options-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-heat-map-chart-legend-options-example-1.js %}
 
 Given below is a brief description of the attribute used to specify the color for each icon in the legend:
 
@@ -71,7 +71,7 @@ A simple gradient legend is looks as shown in the image below:
 
 A heat map chart rendered with a gradient legend looks like this:
 
-{% embed_all {"source": "chart-guide-heat-map-chart-legend-options-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-heat-map-chart-legend-options-example-2.js %}
 
 Given below is a brief description of the attributes used to configure a gradient legend:
 
@@ -111,7 +111,7 @@ A single-color gradient legend looks as shown in the image below:
 
 The code snippet needed to show a single-color gradient legend is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 {
     "chart": {
@@ -128,7 +128,7 @@ The code snippet needed to show a single-color gradient legend is given below:
     }
 }
 
-{% endraw %}{% endhighlight %}
+```
 
 ### Interactivity using the Gradient Legend
 

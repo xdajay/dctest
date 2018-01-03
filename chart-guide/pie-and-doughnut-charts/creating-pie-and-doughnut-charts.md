@@ -22,7 +22,7 @@ The FusionCharts Suite XT includes the following types of pie and doughnut chart
 
 A simple pie 2D chart showing the split in revenue by product categories for one year looks like this:
 
-{% embed_all {"source": "chart-guide-pie-and-doughnut-charts-creating-pie-and-doughnut-charts-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-pie-and-doughnut-charts-creating-pie-and-doughnut-charts-example-1.js %}
 
 
 
@@ -32,7 +32,7 @@ A simple pie 2D chart showing the split in revenue by product categories for one
 
 A doughnut 2D chart showing the split in revenue by product categories for one year looks like this:
 
-{% embed_all {"source": "chart-guide-pie-and-doughnut-charts-creating-pie-and-doughnut-charts-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-pie-and-doughnut-charts-creating-pie-and-doughnut-charts-example-2.js %}
 
 
 
@@ -42,11 +42,11 @@ A doughnut 2D chart showing the split in revenue by product categories for one y
 
 In the JSON data, the attributes and their corresponding values are written in the following key-value pair format:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 "<attributeName>": "<value>"
 
-{% endraw %}{% endhighlight %}
+```
 
 Given below is a brief description of the data structure used to create the above pie and doughnut charts:
 

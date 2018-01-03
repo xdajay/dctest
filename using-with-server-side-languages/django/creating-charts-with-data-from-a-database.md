@@ -26,7 +26,7 @@ Django models map (roughly) to a database table, and provide a place to encapsul
 
 The `Revenue` model looks like shown below: 
 
-{% highlight python lineanchors %}{% raw %}
+```python
 
 from django.db import models
 
@@ -37,7 +37,7 @@ class Revenue(models.Model):
 	def __unicode__(self):
 		return u'%s %s' % (self.MonthlyRevenue, self.Month)
 
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info">To setup your database and create your first model, go through the detailed steps from<a href="https://docs.djangoproject.com/en/1.10/intro/tutorial02/#creating-models" target="_blank"> here </a></p>
 
@@ -46,11 +46,11 @@ Using this data-model, we are generating column 2D chart showing monthly revenue
 
 The column 2D chart by fetching the required data from a database looks like this:
 
-{% embed_chart {"source": "using-with-server-side-languages-django-creating-charts-with-data-from-a-database-example-2.js", "id": "1"} %}
+{% embed_chart using-with-server-side-languages-django-creating-charts-with-data-from-a-database-example-2.js %}
 
 The data code required to create the above chart is given below:
 
-{% highlight python lineanchors %}{% raw %}
+```python
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -87,7 +87,7 @@ def chart(request):
 	column2D = FusionCharts("column2D", "ex1" , "600", "350", "chart-1", "json", dataSource)
 	return render(request, 'index.html', {'output': column2D.render()}) 
 
-{% endraw %}{% endhighlight %}
+```
 
 ## Creating a Drill-down Chart
 
@@ -95,7 +95,7 @@ To render a drill-down chart using database, let's start creating `Country` and 
 
 The models in models.py chart looks like:
 
-{% highlight python lineanchors %}{% raw %}
+```python
 
 from django.db import models
 
@@ -115,16 +115,16 @@ class Country(models.Model):
 	def __unicode__(self):
 		return u'%s %s %s' % (self.Name, self.Code, self.Population)
 
-{% endraw %}{% endhighlight %}
+```
 
 
 The column 2D chart, with the drill-down functionality, that we need to render here looks like this:
 
-{% embed_chart {"source": "using-with-server-side-languages-django-creating-charts-with-data-from-a-database-example-1.js", "id": "2"} %}
+{% embed_chart using-with-server-side-languages-django-creating-charts-with-data-from-a-database-example-1.js %}
 
 The code required to create the above chart is given below:
 
-{% highlight python lineanchors %}{% raw %}
+```python
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -187,7 +187,7 @@ def chart(request):
 	column2D = FusionCharts("column2D", "ex1" , "600", "350", "chart-1", "json", dataSource)
 	return render(request, 'index.html', {'output': column2D.render()}) 
 
-{% endraw %}{% endhighlight %}
+```
 
 
 <p class="text-info">Want to try out the above sample at your local environment? You can download this sample from <a href="https://github.com/fusioncharts/django-wrapper/archive/master.zip" target="_blank">here </a>.</p>

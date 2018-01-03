@@ -40,15 +40,15 @@ The real-time data format for linear gauge depends on:
 
 In the simplest form, if you're looking to update the value of a gauge, you need to output the data in following format:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 &value=75
-{% endraw %}{% endhighlight %}
+```
 
 Here, the output is a single value, 75. So, when the gauge will read this value, it will update the chart by setting its value to 75 (if a data range is provided by the gauge, the value will first be checked to verify if it falls within the defined range).
 
 A linear gauge configured to update the value of a single pointer looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-1.js %}
 
 Given below is a brief description of the JavaScript API methods used to configure real-time updates:
 
@@ -70,15 +70,15 @@ Given below is a brief description of the JavaScript API methods used to configu
 
 If you have multiple pointers defined, you can update them all in a single update as shown in the following output from the real-time data provider page:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 &value=34|25
-{% endraw %}{% endhighlight %}
+```
 
 Here, we are specifying two values in the real-time update. So, assuming that we have two pointers defined for the gauge , each one of them will take the values in sequence and update itself. Therefore, the first pointer will now show 34 and second one will show 25. The sequence of the pointers is determined by the order in which they are defined in the JSON/XML data.
 
 A linear gauge configured to update multiple pointers looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-2.js %}
 
 
 #### Updating Pointer(s) using the Named ID
@@ -87,7 +87,7 @@ Another way to update pointers is by defining a unique ID for each pointer and t
 
 To define unique IDs for pointers, you can use the code snippet shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 "pointers": {
        "pointer": [
         {
@@ -102,19 +102,19 @@ To define unique IDs for pointers, you can use the code snippet shown below:
         }
     ]
 }
-{% endraw %}{% endhighlight %}
+```
 
 You can now update each of these named pointers as shown in the following output in your real-time data stream:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 &gGrovePointer=65&bFieldPointer=80
-{% endraw %}{% endhighlight %}
+```
 
 This will change the value of pointer 1 (having the id `gGrovePointer`) to 65 and pointer 2 (having the id `bFieldPointer`) to 80.
 
 A linear gauge configured to update the values of multiple pointers using named IDs looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-3.js %}
 
 Given below is a brief description of the JavaScript API methods used to update pointers using their IDs:
 
@@ -161,7 +161,7 @@ We can retrieve data from gauge once the data has been updated.
 
 A linear gauge configured to retrieve updated data looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-4.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-4.js %}
 
 The data structure needed to retrieve updated data is as follows:
 
@@ -170,7 +170,7 @@ The data structure needed to retrieve updated data is as follows:
 
 An LED gauge updated in real-time using a server-side script looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-5.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-5.js %}
 
 Given below is a brief description of the attributes used to configure real-time updates using server-side scripts:
 
@@ -200,7 +200,7 @@ Given below is a brief description of the attributes used to configure real-time
 
 An LED gauge configured to stop and restart receiving real-time updates looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-6.js", "id": "6"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-6.js %}
 
 Given below is a brief description of the JavaScript API used to stop and restart receiving real-time updates:
 
@@ -230,7 +230,7 @@ FusionCharts Suite XT introduces two events, `realTimeUpdateComplete` and `realT
 
 A real-time linear gauge configured to listen to the `realTimeUpdateComplete` event looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-7.js", "id": "7"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-7.js %}
 
 Given below is a brief description of the `realTimeUpdateComplete` event:
 

@@ -33,7 +33,7 @@ In this section, we will look at how you can define simple links that open in th
 
 A column 2D chart configured with simple links that open in the same page is shown below:
 
-{% embed_all {"source": "interactivity-drill-down-simple-drill-down-example-1.js", "id": "1"} %}
+{% embed_all interactivity-drill-down-simple-drill-down-example-1.js %}
 
 In the above chart, every time any of the three data plots is clicked, the user is navigated to the FusionCharts home page, which opens in the same page.
 
@@ -64,7 +64,7 @@ All server-side scripting languages provide a generic function to URL Encode any
 
 A column 2d chart configured with simple links that open in a new page is shown below:
 
-{% embed_all {"source": "interactivity-drill-down-simple-drill-down-example-2a.js", "id": "2"} %}
+{% embed_all interactivity-drill-down-simple-drill-down-example-2a.js %}
 
 Every time any of the three data plots is clicked, the FusionCharts home page opens in a new tab of the browser.
 
@@ -76,7 +76,7 @@ To open a link in a new page, the URL passed as the value for the `link` attribu
 
 <p class="text-info">Internally the chart decodes the URL that you set as the link. Before invoking the link, it again encodes the URL. If you are passing multilingual characters via a URL or do not want this decode-encode mechanism to be handled by the chart, you can use the `unescapeLinks` attribute as shown in the code snippet below :
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "chart": {
         "unescapeLinks": "0"
@@ -86,6 +86,6 @@ To open a link in a new page, the URL passed as the value for the `link` attribu
 }
 
 
-{% endraw %}{% endhighlight %}
+```
 
 </p>

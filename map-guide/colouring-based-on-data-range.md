@@ -12,14 +12,14 @@ A gradient scale allows you to specify colours associated with specific data poi
 
 The following chart shows a map with a gradient legend:
 
-{% embed_chart {"source": "map-guide-colouring-based-on-data-range.js", "id": "1"} %}
+{% embed_chart map-guide-colouring-based-on-data-range.js %}
 
 Observe that you can drag the legend pointers from both ends and set thresholds such that only those entities that are within the threshold are visible.
 
 
 The data structure of the map will look like this will look like this
 
-{% embed_data {"source": "map-guide-colouring-based-on-data-range.js"} %}
+{% embed_data map-guide-colouring-based-on-data-range.js %}
 
 This is what we did in the above data structure
 
@@ -37,7 +37,7 @@ This is what we did in the above data structure
 
 The full HTML code to build this example is shown below
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
     <title>A Data Driven Map</title>
@@ -113,5 +113,5 @@ FusionCharts.ready(function() {
     <div id="chart-container">A world map will load here!</div>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 

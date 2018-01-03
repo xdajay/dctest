@@ -11,11 +11,11 @@ This section demonstrates rendering a chart via Bower.
 
 Take a look at the column 2D chart shown below:
 
-{% embed_chart {"source": "chart-guide-standard-charts-creating-standard-charts-example-1.js", "id": "1"} %}
+{% embed_chart chart-guide-standard-charts-creating-standard-charts-example-1.js %}
 
 The data structure needed to render this chart via npm is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 <script src="bower_components/fusioncharts/fusioncharts.js"></script>
 <script src="bower_components/fusioncharts/fusioncharts.maps.js"></script>
 <script>
@@ -78,4 +78,4 @@ new FusionCharts ({
 }).render("chartContainer");
 </script>
 
-{% endraw %}{% endhighlight %}
+```

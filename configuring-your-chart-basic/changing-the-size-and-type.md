@@ -14,7 +14,7 @@ FusionCharts Suite XT lets you specify the dimensions of charts either in pixels
 
 In the previous example, we have already seen how to specify `width` and `height` in pixels. The code is replicated below, again. You just need to provide the numeric values, and NOT add px at the end of such values.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
 <title>My first chart using FusionCharts Suite XT</title>
@@ -97,13 +97,13 @@ In the previous example, we have already seen how to specify `width` and `height
     <div id="chartContainer">FusionCharts XT will load here!</div>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 ### Setting width and height in percent, during initialization
 
 If you want to create a chart that automatically resizes when its parent container (another `<div>` or the entire windows) resizes, you can set the `width` and `height` of chart in percentage as under:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
 <title>My first chart using FusionCharts Suite XT</title>
@@ -188,7 +188,7 @@ If you want to create a chart that automatically resizes when its parent contain
 </div>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 You will just need to ensure that you set the parent container of the chart in such a way that its dimensions change dynamically when the browser resizes or due to other changes taking place in the page (like when an element is added or removed).
 
@@ -207,7 +207,7 @@ When the chart needs to be resized dynamically, we invoke the `resizeTo()` metho
 
 Shown below is an example, along with the code :
 
-{% embed_all {"source": "getting-started-your-first-charts-changing-chart-size-example-1.js", "id": "1"} %}
+{% embed_all getting-started-your-first-charts-changing-chart-size-example-1.js %}
 
 
 ### Dynamically changing chart type using the `chartType()` method
@@ -218,7 +218,7 @@ However, FusionCharts Suite XT makes it simple for you to change chart types usi
 
 Shown below is an example, along with the code :
 
-{% embed_all {"source": "getting-started-your-first-charts-changing-chart-type-example-2.js", "id": "2"} %}
+{% embed_all getting-started-your-first-charts-changing-chart-type-example-2.js %}
 
 
 You can also provide a new data source and format as an optional second parameter of `chartType(chartType, options)` method, to change the data along with the chart.

@@ -30,11 +30,11 @@ The types of scroll charts available in the  FusionCharts Suite XT are :
 
 A scroll column 2D chart looks like this:
 
-{% embed_all {"source": "chart-guide-scroll-charts-creating-scroll-charts-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-scroll-charts-creating-scroll-charts-example-1.js %}
 
 A scroll stacked column 2D chart looks like this:
 
-{% embed_all {"source": "chart-guide-scroll-charts-creating-scroll-charts-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-scroll-charts-creating-scroll-charts-example-2.js %}
 
 ## Creating a Scroll Chart
 
@@ -42,7 +42,7 @@ As an example, we will create a scroll combination 2D chart with a dual y-axis t
 
 The scroll combination 2D chart (dual Y) chart thus created looks like this :
 
-{% embed_all {"source": "chart-guide-scroll-charts-creating-scroll-charts-example-3.js", "id": "3"} %}
+{% embed_all chart-guide-scroll-charts-creating-scroll-charts-example-3.js %}
 
 
 
@@ -52,11 +52,11 @@ The scroll combination 2D chart (dual Y) chart thus created looks like this :
 
 In the JSON data, the attributes and their corresponding values are written in the following key-value pair format:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 "<attributeName>": "<value>"
 
-{% endraw %}{% endhighlight %}
+```
 
 Given below is a brief description of the data structure used to create the above scroll combination 2D (dual Y) chart:
 

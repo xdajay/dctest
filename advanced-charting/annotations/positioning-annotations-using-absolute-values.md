@@ -26,11 +26,11 @@ This article describes how you can position annotations using static values.
 
 A spline chart with a rectangle annotation and a text annotation positioned at the top-right corner of the canvas is shown below:
 
-{% embed_chart {"source": "advanced-charting-annotations-positioning-annotations-using-absolute-values-example-1.js", "id": "1"} %}
+{% embed_chart advanced-charting-annotations-positioning-annotations-using-absolute-values-example-1.js %}
 
 The code snippet to position the rectangle annotation is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 ...
 "annotations": {
         ...
@@ -55,7 +55,7 @@ The code snippet to position the rectangle annotation is given below:
 }
 ...
 
-{% endraw %}{% endhighlight %}
+```
 
 The attributes used for positioning annotations are:
 
@@ -109,4 +109,4 @@ This attribute is applicable only to the rectangle and line annotations.</td>
 
 The complete data structure needed to render the above chart is given below:
 
-{% embed_data {"source": "advanced-charting-annotations-positioning-annotations-using-absolute-values-example-1.js"} %}
+{% embed_data advanced-charting-annotations-positioning-annotations-using-absolute-values-example-1.js %}
